@@ -1,0 +1,961 @@
+/* ==============================
+   RESPONSIVE CSS - PART 1
+================================= */
+
+/* LAPTOP SMALL */
+@media (max-width: 1100px) {
+  .desktop-search {
+    max-width: 420px;
+  }
+
+  .nav-link,
+  .track-link {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .mega-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .mega-promo {
+    grid-column: 1 / -1;
+  }
+}
+
+/* TABLET + MOBILE */
+@media (max-width: 900px) {
+  :root {
+    --header-height: 66px;
+  }
+
+  .container {
+    width: min(100% - 24px, 1180px);
+  }
+
+  .top-alert-inner {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 0;
+  }
+
+  .top-alert p {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .top-alert span {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .header-main {
+    gap: 10px;
+  }
+
+  .mobile-menu-btn {
+    display: inline-flex;
+    flex-shrink: 0;
+  }
+
+  .brand-logo {
+    margin-right: auto;
+  }
+
+  .brand-logo img {
+    width: 132px;
+  }
+
+  .desktop-search {
+    display: none;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-search-row {
+    display: block;
+  }
+
+  /* .account-action {
+    display: none;
+  } */
+
+  .search-toggle {
+    display: none;
+  }
+
+  .header-actions {
+    margin-left: 0;
+    gap: 8px;
+  }
+
+  .icon-action {
+    width: 41px;
+    height: 41px;
+    font-size: 18px;
+  }
+
+  .main-placeholder {
+    padding: 56px 0;
+  }
+
+  .main-placeholder p {
+    font-size: 16px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 20px, 1180px);
+  }
+
+  .top-alert {
+    font-size: 12px;
+  }
+
+  .top-alert-inner {
+    min-height: auto;
+  }
+
+  .header-main {
+    height: 64px;
+  }
+
+  .brand-logo img {
+    width: 118px;
+  }
+
+  .brand-logo strong {
+    font-size: 21px;
+  }
+
+  .mobile-menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-action {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-search-form input {
+    height: 43px;
+    font-size: 13px;
+  }
+
+  .mobile-menu {
+    width: 88vw;
+  }
+
+  .cart-drawer {
+    width: 94vw;
+  }
+
+  .cart-head {
+    min-height: 72px;
+    padding: 15px;
+  }
+
+  .cart-body {
+    padding: 15px;
+  }
+
+  .cart-footer {
+    padding: 14px 15px 16px;
+  }
+
+  .empty-cart {
+    min-height: 250px;
+    padding: 22px;
+  }
+
+  .empty-cart h4 {
+    font-size: 18px;
+  }
+
+  .checkout-btn {
+    height: 50px;
+  }
+
+  .main-placeholder h1 {
+    letter-spacing: -0.8px;
+  }
+}
+
+/* SMALL MOBILE 320PX */
+@media (max-width: 360px) {
+  .container {
+    width: min(100% - 16px, 1180px);
+  }
+
+  .brand-logo img {
+    width: 104px;
+  }
+
+  .mobile-menu-btn,
+  .icon-action {
+    width: 38px;
+    height: 38px;
+  }
+
+  .header-actions {
+    gap: 6px;
+  }
+
+  .mobile-search-form input {
+    font-size: 12px;
+  }
+
+  .mobile-search-form button {
+    width: 46px;
+  }
+
+  .top-alert p,
+  .top-alert span {
+    font-size: 11px;
+  }
+}
+
+/* ==============================
+   PART 2 RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+  .hero-layout {
+    gap: 34px;
+  }
+
+  .hero-visual {
+    min-height: 480px;
+  }
+
+  .hero-circle {
+    width: 360px;
+    height: 360px;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    padding: 48px 0 42px;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 38px;
+  }
+
+  .hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-small-points {
+    justify-content: center;
+  }
+
+  .hero-visual {
+    min-height: 470px;
+  }
+
+  .trust-section {
+    padding: 18px 0;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 36px 0 34px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+    letter-spacing: -1.2px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .hero-badge {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    min-height: 48px;
+    font-size: 14px;
+  }
+
+  .hero-small-points {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hero-small-points div {
+    justify-content: center;
+    border-radius: 14px;
+  }
+
+  .hero-visual {
+    min-height: auto;
+    padding: 8px 0 64px;
+  }
+
+  .hero-circle {
+    width: 280px;
+    height: 280px;
+  }
+
+  .hero-product-card {
+    width: 100%;
+    border-radius: 24px;
+    padding: 18px;
+  }
+
+  .hero-product-image {
+    height: 240px;
+    border-radius: 20px;
+  }
+
+  .hero-product-image img {
+    max-height: 220px;
+  }
+
+  .hero-product-info h3 {
+    font-size: 19px;
+  }
+
+  .hero-offer-tag {
+    top: 16px;
+    left: 16px;
+    border-radius: 14px;
+    padding: 8px 10px;
+  }
+
+  .hero-offer-tag strong {
+    font-size: 13px;
+  }
+
+  .floating-card {
+    padding: 10px 11px;
+    border-radius: 15px;
+  }
+
+  .floating-card i {
+    width: 34px;
+    height: 34px;
+  }
+
+  .floating-card strong {
+    font-size: 12px;
+  }
+
+  .floating-card span {
+    font-size: 11px;
+  }
+
+  .floating-card-top {
+    top: 18px;
+    right: 6px;
+  }
+
+  .floating-card-bottom {
+    left: 6px;
+    bottom: 8px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .trust-card {
+    min-height: 74px;
+    padding: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-content h1 {
+    font-size: 33px;
+  }
+
+  .hero-product-image {
+    height: 210px;
+  }
+
+  .hero-product-image img {
+    max-height: 190px;
+  }
+
+  .hero-circle {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* ==============================
+   PART 3 RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  .concern-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .concern-section {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .concern-section {
+    padding: 48px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .section-heading h2 {
+    font-size: 28px;
+    letter-spacing: -0.8px;
+  }
+
+  .section-heading p {
+    font-size: 14px;
+  }
+
+  .concern-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .concern-card {
+    min-height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .concern-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    margin-bottom: 14px;
+  }
+
+  .concern-icon i {
+    font-size: 21px;
+  }
+
+  .concern-card h3 {
+    font-size: 18px;
+  }
+
+  .concern-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .section-heading h2 {
+    font-size: 25px;
+  }
+
+  .concern-card {
+    padding: 18px;
+  }
+}
+
+/* ==============================
+   PART 4 RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products-section {
+    padding: 64px 0;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-image {
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-section {
+    padding: 48px 0;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .product-card {
+    border-radius: 20px;
+  }
+
+  .product-image {
+    height: 230px;
+  }
+
+  .product-content {
+    padding: 16px;
+  }
+
+  .product-content h3 {
+    min-height: auto;
+    font-size: 17px;
+  }
+
+  .product-actions {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .add-cart-btn,
+  .buy-now-btn {
+    min-height: 42px;
+    font-size: 13px;
+  }
+
+  .products-bottom {
+    margin-top: 26px;
+  }
+
+  .view-all-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-image {
+    height: 205px;
+  }
+
+  .product-image img {
+    max-height: 165px;
+  }
+
+  .product-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-item {
+    grid-template-columns: 68px 1fr;
+    padding: 10px;
+  }
+
+  .cart-item-img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .cart-item-img img {
+    max-width: 58px;
+    max-height: 58px;
+  }
+}
+
+/* ==============================
+   PART 5 RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  .product-type-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-type-section {
+    padding: 64px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-type-section {
+    padding: 48px 0;
+  }
+
+  .product-type-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .product-type-card {
+    min-height: auto;
+    padding: 18px;
+    border-radius: 20px;
+    gap: 13px;
+  }
+
+  .type-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 17px;
+  }
+
+  .type-icon i {
+    font-size: 22px;
+  }
+
+  .type-content h3 {
+    font-size: 18px;
+  }
+
+  .type-content p {
+    font-size: 13px;
+  }
+
+  .type-arrow {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 360px) {
+  .product-type-card {
+    padding: 16px;
+  }
+
+  .type-arrow {
+    display: none;
+  }
+}
+
+/* ==============================
+   PART 6 RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  .offers-section {
+    padding: 64px 0;
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-offer {
+    grid-row: auto;
+    min-height: auto;
+  }
+
+  .offer-image {
+    height: 300px;
+  }
+
+  .offer-image img {
+    max-height: 260px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-offer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-offer .offer-content {
+    display: grid;
+    justify-items: center;
+  }
+
+  .offer-image {
+    width: 100%;
+    height: 260px;
+  }
+
+  .offer-card {
+    min-height: auto;
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .offer-card:not(.main-offer) {
+    flex-direction: column;
+  }
+
+  .offer-card h3 {
+    font-size: 24px;
+  }
+
+  .main-offer h3 {
+    font-size: 32px;
+  }
+
+  .offer-card p {
+    font-size: 14px;
+  }
+
+  .offer-price strong {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .offers-section {
+    padding: 48px 0;
+  }
+
+  .offer-card {
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .offer-image {
+    height: 230px;
+  }
+
+  .offer-image img {
+    max-height: 200px;
+  }
+
+  .offer-cart-btn,
+  .offer-link {
+    width: 100%;
+  }
+
+  .offer-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 17px;
+  }
+
+  .offer-card h3 {
+    font-size: 22px;
+  }
+
+  .main-offer h3 {
+    font-size: 28px;
+  }
+}
+
+/* ==============================
+   PART 7 RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+  .reviews-tips-section {
+    padding: 64px 0;
+  }
+
+  .reviews-grid,
+  .health-tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .health-tips-wrapper {
+    margin-top: 64px;
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-tips-section {
+    padding: 48px 0;
+  }
+
+  .reviews-grid,
+  .health-tips-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .review-card,
+  .health-tip-card {
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .review-avatar {
+    width: 46px;
+    height: 46px;
+    font-size: 18px;
+  }
+
+  .review-top h3 {
+    font-size: 16px;
+  }
+
+  .review-card p,
+  .health-tip-content p {
+    font-size: 13px;
+  }
+
+  .health-tips-wrapper {
+    margin-top: 48px;
+  }
+
+  .health-tip-card {
+    min-height: auto;
+  }
+
+  .health-tip-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    margin-bottom: 14px;
+  }
+
+  .health-tip-icon i {
+    font-size: 21px;
+  }
+
+  .health-tip-content h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .review-card,
+  .health-tip-card {
+    padding: 18px;
+  }
+}
+
+/* ==============================
+   PART 8 RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+  .footer-main {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-cta-section {
+    padding: 64px 0 0;
+  }
+
+  .contact-cta-box {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 34px;
+  }
+
+  .contact-cta-actions {
+    width: 100%;
+  }
+
+  .footer-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-cta-section {
+    padding: 48px 0 0;
+  }
+
+  .contact-cta-box {
+    border-radius: 24px;
+    padding: 26px;
+    text-align: left;
+  }
+
+  .contact-cta-content h2 {
+    font-size: 28px;
+    letter-spacing: -0.8px;
+  }
+
+  .contact-cta-content p {
+    font-size: 14px;
+  }
+
+  .contact-cta-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cta-btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .site-footer {
+    padding-top: 56px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding-bottom: 34px;
+  }
+
+  .footer-logo img {
+    width: 135px;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 12px;
+  }
+
+  .footer-column ul {
+    gap: 9px;
+  }
+
+  .footer-bottom {
+    padding: 18px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 360px) {
+  .contact-cta-box {
+    padding: 22px;
+  }
+
+  .contact-cta-content h2 {
+    font-size: 25px;
+  }
+
+  .footer-payments {
+    flex-wrap: wrap;
+  }
+}
