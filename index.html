@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Brahamayu Healthcare | Ayurvedic Wellness Products</title>
+
+  <meta name="description" content="Brahamayu Healthcare - Ayurvedic wellness products for daily health support, immunity, digestion, diabetes, skin, hair and general wellness." />
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- PAGE OVERLAY -->
+  <div class="page-overlay" id="pageOverlay"></div>
+
+  <!-- TOP ALERT BAR -->
+  <div class="top-alert">
+    <div class="container top-alert-inner">
+      <p>Beware of fake calls. Brahamayu never asks for payment on call.</p>
+      <span>Free Delivery Above ₹699 | 5–8 Days Delivery</span>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header class="site-header" id="siteHeader">
+
+    <!-- HEADER MAIN ROW -->
+    <div class="container header-main">
+
+      <!-- MOBILE MENU BUTTON -->
+      <button class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- LOGO -->
+      <a href="index.html" class="brand-logo" aria-label="Brahamayu Home">
+        <img src="images/logo.png" alt="Brahamayu Healthcare Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <strong>Brahamayu</strong>
+      </a>
+
+      <!-- DESKTOP SEARCH -->
+      <form class="desktop-search" id="desktopSearchForm">
+        <input type="search" id="desktopSearchInput" placeholder="Search Ayurvedic Products..." autocomplete="off" />
+        <button type="submit">Search</button>
+
+        <div class="search-suggestions" id="desktopSearchSuggestions">
+          <p class="suggestion-title">Popular Searches</p>
+          <a href="#">Madhu OK Juice</a>
+          <a href="#">Gas O Fight Churna</a>
+          <a href="#">Amla Ras</a>
+          <a href="#">Liver & Kidney Detox Juice</a>
+        </div>
+      </form>
+
+      <!-- HEADER ACTIONS -->
+    <div class="header-actions">
+        <!-- <button class="icon-action search-toggle" id="mobileSearchBtn" aria-label="Open search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button> -->
+
+        <a href="#" class="icon-action account-action" aria-label="My Account">
+            <i class="fa-regular fa-user"></i>
+        </a>
+
+        <button class="icon-action cart-action" id="cartBtn" aria-label="Open cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </div>
+
+    </div>
+
+    <!-- MOBILE SEARCH ROW -->
+    <div class="mobile-search-row" id="mobileSearchRow">
+      <div class="container">
+        <form class="mobile-search-form" id="mobileSearchForm">
+            <input type="search" id="mobileSearchInput" placeholder="Search Products..." autocomplete="off" />
+
+            <button type="submit" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav">
+      <div class="container desktop-nav-inner">
+
+        <div class="nav-left">
+          <div class="nav-item has-mega">
+            <button class="nav-link mega-toggle" type="button">
+              Category
+              <span>⌄</span>
+            </button>
+
+            <!-- MEGA MENU -->
+            <div class="mega-menu">
+              <div class="mega-grid">
+
+                <div class="mega-column">
+                  <h4>Shop by Concern</h4>
+                  <a href="#">Women’s Wellness</a>
+                  <a href="#">Men’s Wellness</a>
+                  <a href="#">Diabetic Wellness</a>
+                  <a href="#">General Wellness</a>
+                  <a href="#">Immunity Wellness</a>
+                </div>
+
+                <div class="mega-column">
+                  <h4>Health Needs</h4>
+                  <a href="#">Digestive Problems</a>
+                  <a href="#">Cardiac Wellness</a>
+                  <a href="#">Skin Wellness</a>
+                  <a href="#">Hair Wellness</a>
+                  <a href="#">Liver & Kidney Support</a>
+                </div>
+
+                <div class="mega-column">
+                  <h4>Product Type</h4>
+                  <a href="#">Juice / Ras</a>
+                  <a href="#">Capsules</a>
+                  <a href="#">Tablets</a>
+                  <a href="#">Churna</a>
+                  <a href="#">Vinegar</a>
+                </div>
+
+                <div class="mega-promo">
+                  <span>Ayurvedic Wellness</span>
+                  <h3>Natural daily care for your family</h3>
+                  <p>Explore Brahamayu products by concern, category and daily health needs.</p>
+                  <a href="#" class="mega-btn">Shop Now</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <a href="products.html" class="nav-link">Products</a>
+          <a href="#" class="nav-link">Combos</a>
+          <a href="#" class="nav-link">Offers</a>
+          <a href="#" class="nav-link">Consultation</a>
+          <a href="#" class="nav-link">Blog</a>
+        </div>
+
+        <div class="nav-right">
+          <a href="#" class="track-link">Track Order</a>
+        </div>
+
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- MOBILE SIDE MENU -->
+  <aside class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-head">
+      <a href="index.html" class="mobile-logo">
+        <strong>Brahamayu</strong>
+        <span>Healthcare</span>
+      </a>
+
+      <button class="close-btn" id="mobileMenuClose" aria-label="Close menu">×</button>
+    </div>
+
+    <div class="mobile-menu-body">
+
+      <a href="index.html" class="mobile-link active">Home</a>
+
+      <button class="mobile-accordion" type="button">
+        Shop by Concern
+        <span>+</span>
+      </button>
+      <div class="mobile-submenu">
+        <a href="#">Women’s Wellness</a>
+        <a href="#">Men’s Wellness</a>
+        <a href="#">Diabetic Wellness</a>
+        <a href="#">Digestive Problems</a>
+        <a href="#">Immunity Wellness</a>
+        <a href="#">Skin Wellness</a>
+        <a href="#">Hair Wellness</a>
+      </div>
+
+      <button class="mobile-accordion" type="button">
+        Product Type
+        <span>+</span>
+      </button>
+      <div class="mobile-submenu">
+        <a href="#">Juice / Ras</a>
+        <a href="#">Capsules</a>
+        <a href="#">Tablets</a>
+        <a href="#">Churna</a>
+        <a href="#">Vinegar</a>
+      </div>
+
+      <a href="products.html" class="mobile-link">All Products</a>
+      <a href="#" class="mobile-link">Combos & Offers</a>
+      <a href="#" class="mobile-link">Consultation</a>
+      <a href="#" class="mobile-link">Track Order</a>
+      <a href="#" class="mobile-link">My Account</a>
+
+    </div>
+
+    <div class="mobile-menu-footer">
+      <p>Need help?</p>
+      <a href="tel:7055075550">Call: 7055075550</a>
+    </div>
+  </aside>
+
+  <!-- CART DRAWER -->
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-head">
+      <div>
+        <h3>My Cart</h3>
+        <p id="cartSmallText">0 items in your cart</p>
+      </div>
+
+      <button class="close-btn" id="cartClose" aria-label="Close cart">×</button>
+    </div>
+
+    <div class="cart-body" id="cartBody">
+
+      <div class="empty-cart">
+        <div class="empty-cart-icon">🛒</div>
+        <h4>Your cart is empty</h4>
+        <p>Add Ayurvedic wellness products to start your order.</p>
+        <a href="products.html" class="primary-btn">Shop Products</a>
+      </div>
+
+    </div>
+
+    <div class="cart-footer">
+      <div class="free-delivery-box">
+        Add products worth <strong>₹699+</strong> for free delivery.
+      </div>
+
+      <div class="cart-total-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₹0</strong>
+      </div>
+
+      <button class="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+ 
+<!-- MAIN CONTENT -->
+<main>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container hero-layout">
+
+        <!-- HERO LEFT CONTENT -->
+        <div class="hero-content">
+            <span class="hero-badge">
+            <i class="fa-solid fa-leaf"></i>
+            Trusted Ayurvedic Wellness
+            </span>
+
+            <h1>
+            Natural Ayurvedic Products for
+            <span>Daily Wellness</span>
+            </h1>
+
+            <p>
+            Explore Brahamayu Healthcare products crafted for immunity, digestion,
+            diabetic wellness, skin, hair and overall daily health support.
+            </p>
+
+            <div class="hero-actions">
+            <a href="products.html" class="hero-btn primary-hero-btn">
+                Shop Products
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#" class="hero-btn secondary-hero-btn">
+                Free Consultation
+            </a>
+            </div>
+
+            <div class="hero-small-points">
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Free Delivery Above ₹699</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-shield-heart"></i>
+                <span>Quality Checked Products</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <span>Ayurvedic Daily Care</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- HERO RIGHT VISUAL -->
+        <div class="hero-visual">
+
+            <div class="hero-circle"></div>
+
+            <div class="hero-product-card">
+            <div class="hero-offer-tag">
+                <span>Best Seller</span>
+                <strong>Up to 20% OFF</strong>
+            </div>
+
+            <div class="hero-product-image">
+                <img src="images/hero/hero-product.png" alt="Brahamayu Ayurvedic Product" />
+            </div>
+
+            <div class="hero-product-info">
+                <h3>Ayurvedic Wellness Range</h3>
+                <p>Juices, tablets, capsules & churna for daily care.</p>
+
+                <div class="hero-rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <span>4.8/5</span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- TRUST BADGES -->
+    <section class="trust-section">
+        <div class="container trust-grid">
+
+        <div class="trust-card">
+            <div class="trust-icon">
+            <i class="fa-solid fa-certificate"></i>
+            </div>
+            <div>
+            <h4>Quality Checked</h4>
+            <p>Trusted wellness products</p>
+            </div>
+        </div>
+
+        <div class="trust-card">
+            <div class="trust-icon">
+            <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div>
+            <h4>Natural Ingredients</h4>
+            <p>Herbal formulation support</p>
+            </div>
+        </div>
+
+        <div class="trust-card">
+            <div class="trust-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+            </div>
+            <div>
+            <h4>Free Delivery</h4>
+            <p>On orders above ₹699</p>
+            </div>
+        </div>
+
+        <div class="trust-card">
+            <div class="trust-icon">
+            <i class="fa-solid fa-money-bill-wave"></i>
+            </div>
+            <div>
+            <h4>COD Available</h4>
+            <p>Pay after delivery</p>
+            </div>
+        </div>
+
+        <div class="trust-card">
+            <div class="trust-icon">
+            <i class="fa-solid fa-headset"></i>
+            </div>
+            <div>
+            <h4>Expert Support</h4>
+            <p>Help for product selection</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+<!-- BESTSELLING PRODUCTS -->
+<section class="products-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Best Sellers</span>
+      <h2>Popular Ayurvedic Wellness Products</h2>
+      <p>
+        Explore selected Brahamayu products for daily wellness, immunity, liver care and women’s wellness support.
+      </p>
+    </div>
+
+    <div class="products-grid">
+
+      <!-- PRODUCT 1 -->
+      <article class="product-card">
+        <div class="product-badge">Buy 3 Get 1 Free</div>
+
+        <a href="https://brahamayu.com/product/madhu-ok-juice/" class="product-image">
+          <img src="images/products/madhu-ok-juice.png" alt="Brahamayu Healthcare Madhu OK Juice 500ml Ayurvedic Herbal Juice">
+        </a>
+
+        <div class="product-content">
+          <span class="product-category">Diabetic Wellness</span>
+
+          <h3>
+            <a href="https://brahamayu.com/product/madhu-ok-juice/">Madhu-OK Juice</a>
+          </h3>
+
+          <div class="product-rating">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Ayurvedic Wellness Juice</span>
+          </div>
+
+          <div class="product-price">
+            <strong>₹580</strong>
+          </div>
+
+          <div class="product-actions">
+            <button
+              class="add-cart-btn"
+              data-id="madhu-ok-juice"
+              data-name="Madhu-OK Juice"
+              data-price="580"
+              data-image="images/products/madhu-ok-juice.png"
+            >
+              Add to Cart
+            </button>
+
+            <button
+              class="buy-now-btn"
+              data-id="madhu-ok-juice"
+              data-name="Madhu-OK Juice"
+              data-price="580"
+              data-image="images/products/madhu-ok-juice.png"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUCT 2 -->
+      <article class="product-card">
+        <div class="product-badge green-badge">Liver Care</div>
+
+        <a href="https://brahamayu.com/product/punarnava-makoy-kutki-ras-500ml/" class="product-image">
+          <img src="images/products/punarnava-makoy-kutki-ras-500ml.png" alt="Brahamayu Healthcare Punarnava Makoy Kutki Ras 500ml Ayurvedic Herbal Juice">
+        </a>
+
+        <div class="product-content">
+          <span class="product-category">General Wellness</span>
+
+          <h3>
+            <a href="https://brahamayu.com/product/punarnava-makoy-kutki-ras-500ml/">Punarnava Makoy Kutki Ras 500ml</a>
+          </h3>
+
+          <div class="product-rating">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Herbal Liver Support</span>
+          </div>
+
+          <div class="product-price">
+            <strong>₹330</strong>
+          </div>
+
+          <div class="product-actions">
+            <button
+              class="add-cart-btn"
+              data-id="punarnava-makoy-kutki-ras-500ml"
+              data-name="Punarnava Makoy Kutki Ras 500ml"
+              data-price="330"
+              data-image="images/products/punarnava-makoy-kutki-ras-500ml.png"
+            >
+              Add to Cart
+            </button>
+
+            <button
+              class="buy-now-btn"
+              data-id="punarnava-makoy-kutki-ras-500ml"
+              data-name="Punarnava Makoy Kutki Ras 500ml"
+              data-price="330"
+              data-image="images/products/punarnava-makoy-kutki-ras-500ml.png"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUCT 3 -->
+      <article class="product-card">
+        <div class="product-badge">Immunity</div>
+
+        <a href="https://brahamayu.com/product/sea-buckthorn-juice-500ml/" class="product-image">
+          <img src="images/products/sea-buckthorn-juice-500ml.png" alt="Brahamayu Healthcare Sea Buckthorn Juice 500ml Rich in Omega and Vitamin C">
+        </a>
+
+        <div class="product-content">
+          <span class="product-category">Immunity Wellness</span>
+
+          <h3>
+            <a href="https://brahamayu.com/product/sea-buckthorn-juice-500ml/">Sea Buckthorn Juice 500ml</a>
+          </h3>
+
+          <div class="product-rating">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Omega & Antioxidant Support</span>
+          </div>
+
+          <div class="product-price">
+            <strong>₹490</strong>
+          </div>
+
+          <div class="product-actions">
+            <button
+              class="add-cart-btn"
+              data-id="sea-buckthorn-juice-500ml"
+              data-name="Sea Buckthorn Juice 500ml"
+              data-price="490"
+              data-image="images/products/sea-buckthorn-juice-500ml.png"
+            >
+              Add to Cart
+            </button>
+
+            <button
+              class="buy-now-btn"
+              data-id="sea-buckthorn-juice-500ml"
+              data-name="Sea Buckthorn Juice 500ml"
+              data-price="490"
+              data-image="images/products/sea-buckthorn-juice-500ml.png"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUCT 4 -->
+      <article class="product-card">
+        <div class="product-badge green-badge">Women’s Wellness</div>
+
+        <a href="https://brahamayu.com/product/cysto-fight-tablets/" class="product-image">
+          <img src="images/products/cysto-fight-tablets.png" alt="Brahamayu Healthcare Cysto Fight Tablets Ayurvedic Herbal Supplement">
+        </a>
+
+        <div class="product-content">
+          <span class="product-category">Women’s Wellness</span>
+
+          <h3>
+            <a href="https://brahamayu.com/product/cysto-fight-tablets/">Cysto Fight Tablets 60 Tablets</a>
+          </h3>
+
+          <div class="product-rating">
+            <i class="fa-solid fa-leaf"></i>
+            <span>Urinary Wellness Support</span>
+          </div>
+
+          <div class="product-price">
+            <strong>₹649</strong>
+          </div>
+
+          <div class="product-actions">
+            <button
+              class="add-cart-btn"
+              data-id="cysto-fight-tablets"
+              data-name="Cysto Fight Tablets 60 Tablets"
+              data-price="649"
+              data-image="images/products/cysto-fight-tablets.png"
+            >
+              Add to Cart
+            </button>
+
+            <button
+              class="buy-now-btn"
+              data-id="cysto-fight-tablets"
+              data-name="Cysto Fight Tablets 60 Tablets"
+              data-price="649"
+              data-image="images/products/cysto-fight-tablets.png"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="products-bottom">
+      <a href="products.html" class="view-all-btn">
+        View All Products
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+<!-- SHOP BY CONCERN -->
+<section class="concern-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Shop by Health Need</span>
+      <h2>Choose Products by Your Wellness Concern</h2>
+      <p>
+        Find Ayurvedic wellness products according to your daily health needs and lifestyle support.
+      </p>
+    </div>
+
+    <div class="concern-grid">
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-droplet"></i>
+        </div>
+        <h3>Diabetic Wellness</h3>
+        <p>Daily support for sugar wellness routine.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-stomach"></i>
+        </div>
+        <h3>Digestive Problems</h3>
+        <p>Support for digestion and gut wellness.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-shield-heart"></i>
+        </div>
+        <h3>Immunity Wellness</h3>
+        <p>Products for daily immunity support.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-spa"></i>
+        </div>
+        <h3>Skin Wellness</h3>
+        <p>Natural care support for healthy skin.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <h3>Hair Wellness</h3>
+        <p>Ayurvedic support for hair care routine.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-person"></i>
+        </div>
+        <h3>Men’s Wellness</h3>
+        <p>Daily wellness support for men.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-person-dress"></i>
+        </div>
+        <h3>Women’s Wellness</h3>
+        <p>Ayurvedic care for women’s wellness.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-heart-pulse"></i>
+        </div>
+        <h3>Cardiac Wellness</h3>
+        <p>Daily wellness support for heart health.</p>
+      </a>
+
+      <a href="#" class="concern-card">
+        <div class="concern-icon">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+        <h3>General Wellness</h3>
+        <p>Products for everyday health support.</p>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- SPECIAL OFFERS / COMBO DEALS -->
+<section class="offers-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Special Deals</span>
+      <h2>Combo Offers & Wellness Deals</h2>
+      <p>
+        Save more with Brahamayu wellness combos, free gift offers and selected Ayurvedic product deals.
+      </p>
+    </div>
+
+    <div class="offers-grid">
+
+      <!-- OFFER 1 -->
+      <article class="offer-card main-offer">
+        <div class="offer-content">
+          <span class="offer-label">Limited Offer</span>
+          <h3>Madhu-OK Juice Buy 3 Get 1 Free</h3>
+          <p>
+            Add this combo to your cart and get 4 bottles while paying for only 3.
+          </p>
+
+          <div class="offer-price">
+            <strong>₹1740</strong>
+            <span>4 Bottles Combo</span>
+          </div>
+
+          <button
+            class="offer-cart-btn"
+            data-id="madhu-ok-b3g1-combo"
+            data-name="Madhu-OK Juice Buy 3 Get 1 Free Combo"
+            data-price="1740"
+            data-image="images/products/madhu-ok-juice.png"
+          >
+            Add Combo
+          </button>
+        </div>
+
+        <div class="offer-image">
+          <img src="images/products/madhu-ok-juice.png" alt="Brahamayu Madhu OK Juice Buy 3 Get 1 Free Combo">
+        </div>
+      </article>
+
+      <!-- OFFER 2 -->
+      <article class="offer-card">
+        <div class="offer-icon">
+          <i class="fa-solid fa-gift"></i>
+        </div>
+
+        <div class="offer-content">
+          <span class="offer-label green-label">Free Gift</span>
+          <h3>Free Gift on ₹1499+</h3>
+          <p>
+            Shop above ₹1499 and get Gas O Fight Churna as a free wellness gift.
+          </p>
+
+          <a href="products.html" class="offer-link">
+            Shop Now
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- OFFER 3 -->
+      <article class="offer-card">
+        <div class="offer-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+
+        <div class="offer-content">
+          <span class="offer-label">Wellness Pack</span>
+          <h3>Liver + Immunity Combo</h3>
+          <p>
+            Punarnava Makoy Kutki Ras and Sea Buckthorn Juice wellness combo.
+          </p>
+
+          <div class="offer-price small-offer-price">
+            <strong>₹820</strong>
+            <span>2 Products</span>
+          </div>
+
+          <button
+            class="offer-cart-btn outline-offer-btn"
+            data-id="liver-immunity-combo"
+            data-name="Liver + Immunity Wellness Combo"
+            data-price="820"
+            data-image="images/products/punarnava-makoy-kutki-ras-500ml.png"
+          >
+            Add Combo
+          </button>
+        </div>
+      </article>
+
+      <!-- OFFER 4 -->
+      <article class="offer-card consultation-offer">
+        <div class="offer-icon">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+
+        <div class="offer-content">
+          <span class="offer-label green-label">Need Help?</span>
+          <h3>Not sure what to choose?</h3>
+          <p>
+            Get help in choosing the right Ayurvedic product according to your wellness need.
+          </p>
+
+          <a href="tel:7055075550" class="offer-link">
+            Call 7055075550
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+<!-- CUSTOMER REVIEWS + HEALTH TIPS -->
+<section class="reviews-tips-section">
+  <div class="container">
+
+    <!-- CUSTOMER REVIEWS -->
+    <div class="section-heading">
+      <span>Customer Trust</span>
+      <h2>What Customers Say About Brahamayu</h2>
+      <p>
+        Real wellness journeys are different for everyone. Here are some customer-style experiences shared for trust and product understanding.
+      </p>
+    </div>
+
+    <div class="reviews-grid">
+
+      <article class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">R</div>
+          <div>
+            <h3>Rahul Sharma</h3>
+            <span>Verified Customer</span>
+          </div>
+        </div>
+
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p>
+          Brahamayu products feel natural and easy to add in daily routine. Packaging and delivery experience was also good.
+        </p>
+      </article>
+
+      <article class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">P</div>
+          <div>
+            <h3>Priya Verma</h3>
+            <span>Verified Customer</span>
+          </div>
+        </div>
+
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+
+        <p>
+          I liked the product selection. It is simple to choose products by health concern and the support team is helpful.
+        </p>
+      </article>
+
+      <article class="review-card">
+        <div class="review-top">
+          <div class="review-avatar">A</div>
+          <div>
+            <h3>Amit Kumar</h3>
+            <span>Verified Customer</span>
+          </div>
+        </div>
+
+        <div class="review-stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+
+        <p>
+          Good Ayurvedic range for everyday wellness. The website is clean and products are easy to understand.
+        </p>
+      </article>
+
+    </div>
+
+<!-- SHOP BY PRODUCT TYPE -->
+<section class="product-type-section">
+  <div class="container">
+
+    <div class="section-heading">
+      <span>Shop by Product Type</span>
+      <h2>Explore Brahamayu Products by Category</h2>
+      <p>
+        Choose from Ayurvedic juices, tablets, capsules, churna and wellness products made for daily care.
+      </p>
+    </div>
+
+    <div class="product-type-grid">
+
+      <a href="#" class="product-type-card">
+        <div class="type-icon">
+          <i class="fa-solid fa-flask"></i>
+        </div>
+        <div class="type-content">
+          <h3>Juice / Ras</h3>
+          <p>Amla Ras, Giloy Ras, Aloe Vera Juice and more.</p>
+        </div>
+        <span class="type-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <a href="#" class="product-type-card">
+        <div class="type-icon">
+          <i class="fa-solid fa-tablets"></i>
+        </div>
+        <div class="type-content">
+          <h3>Tablets</h3>
+          <p>Daily wellness tablets for specific health needs.</p>
+        </div>
+        <span class="type-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <a href="#" class="product-type-card">
+        <div class="type-icon">
+          <i class="fa-solid fa-capsules"></i>
+        </div>
+        <div class="type-content">
+          <h3>Capsules</h3>
+          <p>Ayurvedic capsule range for easy daily use.</p>
+        </div>
+        <span class="type-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <a href="#" class="product-type-card">
+        <div class="type-icon">
+          <i class="fa-solid fa-mortar-pestle"></i>
+        </div>
+        <div class="type-content">
+          <h3>Churna</h3>
+          <p>Traditional herbal churna for wellness support.</p>
+        </div>
+        <span class="type-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <a href="#" class="product-type-card">
+        <div class="type-icon">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="type-content">
+          <h3>Vinegar</h3>
+          <p>Apple cider vinegar and herbal vinegar products.</p>
+        </div>
+        <span class="type-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </span>
+      </a>
+
+      <a href="#" class="product-type-card">
+        <div class="type-icon">
+          <i class="fa-solid fa-gem"></i>
+        </div>
+        <div class="type-content">
+          <h3>Shilajit / Resin</h3>
+          <p>Premium resin-based wellness support products.</p>
+        </div>
+        <span class="type-arrow">
+          <i class="fa-solid fa-arrow-right"></i>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- HEALTH TIPS -->
+    <div class="health-tips-wrapper">
+
+      <div class="section-heading health-heading">
+        <span>Ayurvedic Health Tips</span>
+        <h2>Simple Daily Wellness Tips</h2>
+        <p>
+          Small healthy habits can support your daily wellness routine. These tips are general and not a replacement for medical advice.
+        </p>
+      </div>
+
+      <div class="health-tips-grid">
+
+        <article class="health-tip-card">
+          <div class="health-tip-icon">
+            <i class="fa-solid fa-droplet"></i>
+          </div>
+
+          <div class="health-tip-content">
+            <h3>Stay Hydrated Daily</h3>
+            <p>
+              Drink enough water through the day and maintain a balanced diet for better daily wellness support.
+            </p>
+          </div>
+        </article>
+
+        <article class="health-tip-card">
+          <div class="health-tip-icon">
+            <i class="fa-solid fa-bowl-food"></i>
+          </div>
+
+          <div class="health-tip-content">
+            <h3>Support Digestion Naturally</h3>
+            <p>
+              Eat on time, avoid overeating and include simple herbal wellness habits in your daily routine.
+            </p>
+          </div>
+        </article>
+
+        <article class="health-tip-card">
+          <div class="health-tip-icon">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+
+          <div class="health-tip-content">
+            <h3>Build a Wellness Routine</h3>
+            <p>
+              Consistency matters. Follow a regular routine with proper sleep, movement and mindful food choices.
+            </p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT CTA + FOOTER -->
+<section class="contact-cta-section">
+  <div class="container">
+    <div class="contact-cta-box">
+
+      <div class="contact-cta-content">
+        <span>Need Help?</span>
+        <h2>Not sure which Ayurvedic product is right for you?</h2>
+        <p>
+          Connect with Brahamayu support and get help in choosing products according to your wellness need.
+        </p>
+      </div>
+
+      <div class="contact-cta-actions">
+        <a href="tel:7055075550" class="contact-cta-btn primary-contact-btn">
+          <i class="fa-solid fa-phone"></i>
+          Call 7055075550
+        </a>
+
+        <a href="contact.html" class="contact-cta-btn secondary-contact-btn">
+          Contact Us
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+
+    <div class="footer-main">
+
+      <!-- FOOTER BRAND -->
+      <div class="footer-column footer-brand">
+        <a href="index.html" class="footer-logo">
+          <img src="images/logo.png" alt="Brahamayu Healthcare Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+          <strong>Brahamayu</strong>
+        </a>
+
+        <p>
+          Brahamayu Healthcare offers Ayurvedic wellness products for daily health support,
+          immunity, digestion, skin, hair and general wellness.
+        </p>
+
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="#" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="#">Combos & Offers</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- CATEGORIES -->
+      <div class="footer-column">
+        <h3>Wellness Categories</h3>
+
+        <ul>
+          <li><a href="#">Diabetic Wellness</a></li>
+          <li><a href="#">Digestive Problems</a></li>
+          <li><a href="#">Immunity Wellness</a></li>
+          <li><a href="#">Women’s Wellness</a></li>
+          <li><a href="#">General Wellness</a></li>
+        </ul>
+      </div>
+
+      <!-- SUPPORT -->
+      <div class="footer-column">
+        <h3>Customer Support</h3>
+
+        <ul>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Return & Refund Policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="footer-column footer-contact">
+        <h3>Contact Info</h3>
+
+        <ul>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:7055075550">7055075550</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@brahamayu.com">info@brahamayu.com</a>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>India</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Brahamayu Healthcare. All rights reserved.</p>
+
+      <div class="footer-payments">
+        <span>Secure Payments</span>
+        <i class="fa-solid fa-shield-halved"></i>
+        <i class="fa-solid fa-credit-card"></i>
+        <i class="fa-solid fa-money-bill-wave"></i>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+</main>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
